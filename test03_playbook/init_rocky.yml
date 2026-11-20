@@ -1,5 +1,6 @@
 # test03_playbook/init_rocky.yml
 
+
 - name: epel-release 설치
   hosts: rocky
   become: yes

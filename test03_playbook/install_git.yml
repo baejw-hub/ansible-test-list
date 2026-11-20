@@ -2,7 +2,7 @@
 
 
 - name: Git 설치 및 사용자 환경 설정
-  hosts: all
+  hosts: localhost
   become: yes
 
 
@@ -15,7 +15,7 @@
     - name: 2. user.name 설정
       git_config:
         name: user.name
-        value: "kim gura"
+        value: "baejw-hub"
         scope: global
       become: yes
       become_user: user1
@@ -23,7 +23,7 @@
     - name: 3. user.email 설정
       git_config:
         name: user.email
-        value: "aaa@naver.com"
+        value: "baejw01072526898@gmail.com"
         scope: global
       become: yes
       become_user: user1
